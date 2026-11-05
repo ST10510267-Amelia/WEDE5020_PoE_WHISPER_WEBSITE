@@ -81,7 +81,7 @@ The Whisper web experience has been tested across mobile, tablet, and desktop vi
 | **Home (`index.html`)** | ![Tablet Home](<images/index.html_iPad_Mini.png>) |
 | **About Us (`about.html`)** | ![Tablet About](<images/about.html_iPad_Mini.png>) |
 | **The Menu (`menu.html`)** | ![Tablet Menu](<images/menu.html_iPad_Mini.png>) |
-| **Events (`events.html`)** | ![Tablet Events](<images/events.html_iPad_Mini.png>) |
+| **Events (`events.html`)** | ![Tablet Events](<images/events.html_iPad Mini.png>) |
 | **Contact Us (`contact.html`)** | ![Tablet Contact](<images/contact.html_iPad_Mini.png>) |
 | **Cart (`cart.html`)** | ![Tablet Cart](<images/cart.html_iPad_Mini.png>) |
 
