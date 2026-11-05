@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Whisper luxury cosmetics. Send a general message or calculate product order estimates for our cocktail, shooter, and after-hours lip plumper lines.">
+    <meta name="keywords" content="Whisper cosmetics contact, luxury lip gloss Durban, lip plumper enquiry, Umhlanga cosmetics store">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Whisper | Contact Us & Product Enquiry</title>
+</head>
+<body>
+
+<header class="site-header">
+    <!-- Brand Logo -->
+    <a href="index.html" class="logo-link" aria-label="Whisper Home">
+        <img src="images/whisper_logo.png" alt="Whisper Logo" class="logo-img">
+    </a>
+
+    <!-- Main Navigation Links -->
+    <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="menu.html">THE MENU</a>
+        <a href="events.html">EVENTS</a>
+        <a href="contact.html" class="active">CONTACT US</a>
+    </nav>
+
+    <!-- Cart / Bag Link with Inline SVG -->
+    <div class="header-actions">
+        <a href="cart.html" class="cart-link" aria-label="Shopping Bag">
+            <svg class="tote-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Curved Handles -->
+                <path d="M8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                <!-- Curved Tote Body -->
+                <path d="M5 8.5H19L17.8 20C17.7 20.6 17.2 21 16.6 21H7.4C6.8 21 6.3 20.6 6.2 20L5 8.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="cart-label"></span>
+        </a>
+    </div>
+</header>
+
+<!-- Contact Us Main -->
+<main class="contact-page">
+
+    <!-- Header Section -->
+    <section class="contact-intro">
+        <h1>GET IN TOUCH</h1>
+        <p>Send us a direct message or switch tabs below to calculate a product enquiry estimate.</p>
+    </section>
+
+    <!-- Form Type Toggle Buttons -->
+    <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2.5rem;">
+        <button id="tabContactBtn" type="button" class="btn active-tab" onclick="switchForm('contact')" style="width: auto; padding: 0.6rem 1.8rem; background: var(--text-main, #ffffff); color: var(--bg-dark, #000000);">General Message</button>
+        <button id="tabEnquiryBtn" type="button" class="btn" onclick="switchForm('enquiry')" style="width: auto; padding: 0.6rem 1.8rem; background: transparent; color: var(--text-main, #ffffff);">Product Enquiry</button>
+    </div>
+
+    <div class="contact-grid">
+
+        <!-- Dynamic Form Section -->
+        <section class="contact-form-section">
+            
+            <!-- FORM 1: GENERAL CONTACT MESSAGE -->
+            <form id="contactForm" action="#" method="post" class="contact-form" novalidate>
+                <h2>Send Us a Message</h2>
+                
+                <div class="form-group">
+                    <label for="contactName">Full Name *</label>
+                    <input type="text" id="contactName" name="name" placeholder="Enter your name" required minlength="2">
+                    <span class="error-msg" id="contactNameError" style="color: #e74c3c; font-size: 0.75rem; display: none; margin-top: 0.3rem;">Please enter your full name (at least 2 characters).</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email Address *</label>
+                    <input type="email" id="contactEmail" name="email" placeholder="Enter your email" required>
+                    <span class="error-msg" id="contactEmailError" style="color: #e74c3c; font-size: 0.75rem; display: none; margin-top: 0.3rem;">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" name="subject" placeholder="What is this regarding?">
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message *</label>
+                    <textarea id="contactMessage" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    <span class="error-msg" id="contactMsgError" style="color: #e74c3c; font-size: 0.75rem; display: none; margin-top: 0.3rem;">Please enter your message.</span>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <!-- FORM 2: PRODUCT ENQUIRY & ESTIMATE (Hidden by default) -->
+            <form id="enquiryForm" action="#" method="post" class="contact-form" novalidate style="display: none;">
+                <h2>Product Enquiry & Estimate</h2>
+
+                <div class="form-group">
+                    <label for="enquiryName">Full Name *</label>
+                    <input type="text" id="enquiryName" name="name" placeholder="Enter your name" required minlength="2">
+                    <span class="error-msg" id="enquiryNameError" style="color: #e74c3c; font-size: 0.75rem; display: none; margin-top: 0.3rem;">Please enter your full name.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryEmail">Email Address *</label>
+                    <input type="email" id="enquiryEmail" name="email" placeholder="Enter your email" required>
+                    <span class="error-msg" id="enquiryEmailError" style="color: #e74c3c; font-size: 0.75rem; display: none; margin-top: 0.3rem;">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="productSelect">Select Product *</label>
+                    <select id="productSelect" name="product" required style="width: 100%; padding: 1rem; background-color: #0d0d0d; color: #ffffff; border: 1px solid #2a2a2a; border-radius: 2px; font-family: Arial, sans-serif;">
+                        <option value="">-- Choose a product --</option>
+                        
+                        <!-- THE COCKTAIL LINE (R120) -->
+                        <option value="Cocktail Line - Mojito" data-price="120">Mojito (Cocktail Line - R120)</option>
+                        <option value="Cocktail Line - Champagne" data-price="120">Champagne (Cocktail Line - R120)</option>
+                        <option value="Cocktail Line - Strawberry Daiquiri" data-price="120">Strawberry Daiquiri (Cocktail Line - R120)</option>
+                        <option value="Cocktail Line - Raspberry Cosmo" data-price="120">Raspberry Cosmo (Cocktail Line - R120)</option>
+                        <option value="Cocktail Line - Cherry Manhattan" data-price="120">Cherry Manhattan (Cocktail Line - R120)</option>
+                        <option value="Cocktail Line - Espresso Martini" data-price="120">Espresso Martini (Cocktail Line - R120)</option>
+
+                        <!-- THE SHOOTER LINE (R75) -->
+                        <option value="Shooter Line - Liquid Cocaine Shot" data-price="75">Liquid Cocaine Shot (Shooter Line - R75)</option>
+                        <option value="Shooter Line - Fireball Shot" data-price="75">Fireball Shot (Shooter Line - R75)</option>
+                        <option value="Shooter Line - Woo Woo Shot" data-price="75">Woo Woo Shot (Shooter Line - R75)</option>
+                        <option value="Shooter Line - Jello Shot" data-price="75">Jello Shot (Shooter Line - R75)</option>
+                        <option value="Shooter Line - Blow Job Shot" data-price="75">Blow Job Shot (Shooter Line - R75)</option>
+                        <option value="Shooter Line - Black Russian Shot" data-price="75">Black Russian Shot (Shooter Line - R75)</option>
+
+                        <!-- THE AFTER HOURS LINE (R150) -->
+                        <option value="After Hours Line - Drunk Ghost" data-price="150">Drunk Ghost (After Hours Line - R150)</option>
+                        <option value="After Hours Line - Pumpkinspice Cocktail" data-price="150">Pumpkinspice Cocktail (After Hours Line - R150)</option>
+                        <option value="After Hours Line - Poison Apple" data-price="150">Poison Apple (After Hours Line - R150)</option>
+                        <option value="After Hours Line - Purple Man Eater" data-price="150">Purple Man Eater (After Hours Line - R150)</option>
+                        <option value="After Hours Line - Vampire's Kiss" data-price="150">Vampire's Kiss (After Hours Line - R150)</option>
+                        <option value="After Hours Line - Black Magic Martini" data-price="150">Black Magic Martini (After Hours Line - R150)</option>
+                    </select>
+                    <span class="error-msg" id="productError" style="color: #e74c3c; font-size: 0.75rem; display: none; margin-top: 0.3rem;">Please select a product.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity Required</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryDetails">Customization Notes</label>
+                    <textarea id="enquiryDetails" name="details" rows="3" placeholder="Specify any custom shade preferences or order notes..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Calculate Estimate & Check Stock</button>
+            </form>
+
+            <!-- Dynamic Feedback Output Container -->
+            <div id="enquiryFeedback" style="display: none; margin-top: 1.5rem; padding: 1.5rem; background-color: #1a1a1a; border: 1px solid #c5a059; border-radius: 4px;">
+                <h3 style="color: #c5a059; font-size: 1.1rem; margin-bottom: 0.5rem; font-family: 'Times New Roman', serif;">ESTIMATE GENERATED</h3>
+                <p id="feedbackText" style="font-size: 0.88rem; color: #cccccc; line-height: 1.6;"></p>
+            </div>
+
+        </section>
+
+        <!-- Store Location & Hours -->
+        <section class="contact-info-section">
+            <div class="location-box">
+                <h2>Visit Us</h2>
+                <address>
+                    Whisper Store<br>
+                    Ocean Gate Mall<br>
+                    Umhlanga Rocks<br>
+                    South Africa
+                </address>
+                <p>We'd love to see you in store.</p>
+            </div>
+
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.81975955933!2d31.08359927628576!3d-29.7249798165372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef70fd43ef4d2cd%3A0xb3272b3febe498d7!2sOceans%20Mall!5e0!3m2!1sen!2sza!4v1788187705487!5m2!1sen!2sza" 
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Whisper Store Location Map"></iframe>
+            </div>
+
+            <div class="direct-reach">
+                <h2>Other ways to reach us</h2>
+                <ul class="contact-links">
+                    <li><strong>Email:</strong> <a href="mailto:hello@whisper.co.za">hello@whisper.co.za</a></li>
+                    <li><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank" rel="noopener">@whispergloss</a></li>
+                    <li><strong>TikTok:</strong> <a href="https://tiktok.com" target="_blank" rel="noopener">@whispergloss</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</main>
+
+<!-- Site Footer -->
+<footer class="site-footer">
+    <p>&copy; 2026 Whisper. All rights reserved. | <a href="sitemap.html" style="color: inherit;">Sitemap</a></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

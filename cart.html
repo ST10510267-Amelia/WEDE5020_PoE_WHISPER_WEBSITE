@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Whisper | Cart</title>
+</head>
+<body>
+
+    <header class="site-header">
+        <!-- Brand Logo -->
+        <a href="index.html" class="logo-link" aria-label="Whisper Home">
+            <img src="images/whisper_logo.png" alt="Whisper Logo" class="logo-img">
+        </a>
+
+        <!-- Main Navigation Links -->
+        <nav class="main-nav" aria-label="Main Navigation">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="menu.html">THE MENU</a>
+            <a href="events.html">EVENTS</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+
+        <!-- Cart / Bag Link with Inline SVG -->
+        <div class="header-actions">
+            <a href="cart.html" class="cart-link active" aria-label="Shopping Bag">
+                <svg class="tote-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Curved Handles -->
+                    <path d="M8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                    <!-- Curved Tote Body -->
+                    <path d="M5 8.5H19L17.8 20C17.7 20.6 17.2 21 16.6 21H7.4C6.8 21 6.3 20.6 6.2 20L5 8.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="cart-label"></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- CART CONTENT -->
+    <main class="events-hero">
+        <h1>YOUR BAG</h1>
+        <p>Review your selection before proceeding to checkout.</p>
+    </main>
+
+    <div class="events-container" style="max-width: 900px;">
+        <div class="event-card" style="grid-template-columns: 1fr; display: block; padding: 2rem;">
+            
+            <!-- JavaScript will dynamically inject items or the empty message here -->
+            <div id="cartItemsContainer"></div>
+
+            <!-- Grand Total Section -->
+            <div id="cartSummarySection" style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">Total Amount Due</p>
+                    <h2 id="cartTotalAmount" style="font-size: 1.6rem; font-family: var(--font-heading); color: var(--text-main);">R0.00</h2>
+                </div>
+                <button type="button" class="btn" onclick="alert('Proceeding to secure checkout...')" style="width: auto; padding: 0.8rem 2rem;">Proceed to Checkout</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Whisper. All rights reserved.</p>
+    </footer>
+
+    <!-- CRITICAL: REQUIRED TO LOAD JAVASCRIPT CART RENDERING -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+```
+
+Save `cart.html` and refresh your browser—your 4 items, quantities, and totals will now populate correctly.

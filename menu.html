@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Whisper luxury lip gloss menu. Discover the Cocktail Line, Shooter Line, and After Hours Line featuring custom flavors, plumping tingle, and pricing in ZAR.">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Whisper | The Menu</title>
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="logo-link" aria-label="Whisper Home">
+        <img src="images/whisper_logo.png" alt="Whisper Logo" class="logo-img">
+    </a>
+
+    <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="menu.html" class="active">THE MENU</a>
+        <a href="events.html">EVENTS</a>
+        <a href="contact.html">CONTACT US</a>
+    </nav>
+
+    <div class="header-actions">
+        <a href="cart.html" class="cart-link" aria-label="Shopping Bag">
+            <svg class="tote-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M5 8.5H19L17.8 20C17.7 20.6 17.2 21 16.6 21H7.4C6.8 21 6.3 20.6 6.2 20L5 8.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="cart-label"></span>
+        </a>
+    </div>
+</header>
+
+<main>
+    <!-- THE COCKTAIL LINE -->
+    <section class="menu-category">
+        <header class="category-header">
+            <h2>THE COCKTAIL LINE</h2>
+            <p>Our Cocktail Line brings the feeling of a night out to your lips. Inspired by some of your favorite cocktails, each gloss has its own color, flavor, and personality.</p>
+        </header>
+
+        <div class="product-grid">
+            <article class="product-card" data-name="Mojito" data-price="120">
+                <img src="images/mojito.jpg" alt="Mojito Lip Gloss">
+                <div class="product-info">
+                    <h3>Mojito</h3>
+                    <p class="product-type">Clear Plumping Lip Gloss</p>
+                    <p>A clear, sparkly lip gloss with a fresh mint and lime flavor.</p>
+                    <span class="price">R120.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-mojito" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-mojito" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Champagne" data-price="120">
+                <img src="images/champagne.jpg" alt="Champagne Lip Gloss">
+                <div class="product-info">
+                    <h3>Champagne</h3>
+                    <p class="product-type">Golden Plumping Lip Gloss</p>
+                    <p>A gold, sparkly lip gloss with a sweet caramel flavor.</p>
+                    <span class="price">R120.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-champagne" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-champagne" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Strawberry Daiquiri" data-price="120">
+                <img src="images/strawberry_daiquiri.jpg" alt="Strawberry Daiquiri Lip Gloss">
+                <div class="product-info">
+                    <h3>Strawberry Daiquiri</h3>
+                    <p class="product-type">Pink Plumping Lip Gloss</p>
+                    <p>A pink, sparkly lip gloss with a fruity strawberry flavor.</p>
+                    <span class="price">R120.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-strawberry" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-strawberry" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Raspberry Cosmo" data-price="120">
+                <img src="images/raspberry_cosmo.jpg" alt="Raspberry Cosmo Lip Gloss">
+                <div class="product-info">
+                    <h3>Raspberry Cosmo</h3>
+                    <p class="product-type">Bright Red Plumping Lip Gloss</p>
+                    <p>A bright red gloss with a sweet raspberry and cranberry flavor.</p>
+                    <span class="price">R120.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-raspberry" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-raspberry" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Cherry Manhattan" data-price="120">
+                <img src="images/cherry_manhattan.png" alt="Cherry Manhattan Lip Gloss">
+                <div class="product-info">
+                    <h3>Cherry Manhattan</h3>
+                    <p class="product-type">Dark Maroon Plumping Lip Gloss</p>
+                    <p>A dark maroon lip gloss with a deep cherry flavor.</p>
+                    <span class="price">R120.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-cherry" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-cherry" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Espresso Martini" data-price="120">
+                <img src="images/espresso_martini.png" alt="Espresso Martini Lip Gloss">
+                <div class="product-info">
+                    <h3>Espresso Martini</h3>
+                    <p class="product-type">Deep Brown Plumping Lip Gloss</p>
+                    <p>A dark brown lip gloss with a rich coffee flavor.</p>
+                    <span class="price">R120.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-espresso" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-espresso" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- THE SHOOTER LINE -->
+    <section class="menu-category">
+        <header class="category-header">
+            <h2>THE SHOOTER LINE</h2>
+            <p>Small bottle, big attitude. Our Shooter Line is inspired by classic shots, with bold shades and glossy finishes.</p>
+        </header>
+
+        <div class="product-grid">
+            <article class="product-card" data-name="Liquid Cocaine Shot" data-price="75">
+                <img src="images/liquid_cocaine.jpg" alt="Liquid Cocaine Shot Lip Gloss">
+                <div class="product-info">
+                    <h3>Liquid Cocaine Shot</h3>
+                    <p class="product-type">Silver Shimmering Plumping Lip Gloss</p>
+                    <p>Sparkling gloss with a smooth vanilla flavor.</p>
+                    <span class="price">R75.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-liquid" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-liquid" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Fireball Shot" data-price="75">
+                <img src="images/fireball.jpg" alt="Fireball Shot Lip Gloss">
+                <div class="product-info">
+                    <h3>Fireball Shot</h3>
+                    <p class="product-type">Deep Orange Plumping Lip Gloss</p>
+                    <p>Infused with a fiery cinnamon flavor.</p>
+                    <span class="price">R75.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-fireball" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-fireball" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Woo Woo Shot" data-price="75">
+                <img src="images/woo_woo.jpg" alt="Woo Woo Shot Lip Gloss">
+                <div class="product-info">
+                    <h3>Woo Woo Shot</h3>
+                    <p class="product-type">Dusty Rose Plumping Lip Gloss</p>
+                    <p>Crafted with a sweet peach flavor.</p>
+                    <span class="price">R75.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-woowoo" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-woowoo" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Jello Shot" data-price="75">
+                <img src="images/jello_shot.jpg" alt="Jello Shot Lip Gloss">
+                <div class="product-info">
+                    <h3>Jello Shot</h3>
+                    <p class="product-type">Bright Red Opaque Plumping Lip Gloss</p>
+                    <p>Bold red shade with a rich cherry flavor.</p>
+                    <span class="price">R75.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-jello" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-jello" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Blow Job Shot" data-price="75">
+                <img src="images/blow_job.jpg" alt="Blow Job Shot Lip Gloss">
+                <div class="product-info">
+                    <h3>Blow Job Shot</h3>
+                    <p class="product-type">Light Brown Plumping Lip Gloss</p>
+                    <p>Flavored with a cold sweet coffee-almond latte flavor.</p>
+                    <span class="price">R75.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-blowjob" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-blowjob" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Black Russian Shot" data-price="75">
+                <img src="images/black_russian.jpg" alt="Black Russian Shot Lip Gloss">
+                <div class="product-info">
+                    <h3>Black Russian Shot</h3>
+                    <p class="product-type">Deep Dark Brown Plumping Lip Gloss</p>
+                    <p>Rich gloss with an intense coffee flavor.</p>
+                    <span class="price">R75.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-blackrussian" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-blackrussian" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- THE AFTER HOURS LINE -->
+    <section class="menu-category">
+        <header class="category-header">
+            <h2>THE AFTER HOURS LINE</h2>
+            <p>A spellbinding fusion of dark spirits and high-shine gloss. Available only while supplies last.</p>
+        </header>
+
+        <div class="product-grid">
+            <article class="product-card" data-name="Drunk Ghost" data-price="150">
+                <img src="images/drunk_ghost.jpg" alt="Drunk Ghost Lip Gloss">
+                <div class="product-info">
+                    <h3>Drunk Ghost</h3>
+                    <p class="product-type">White Plumping Lip Gloss</p>
+                    <p>Smooth gloss with a coconut and marshmallow flavor.</p>
+                    <span class="price">R150.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-drunkghost" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-drunkghost" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Pumpkinspice Cocktail" data-price="150">
+                <img src="images/pumpkinspice_cocktail.jpg" alt="Pumpkinspice Cocktail Lip Gloss">
+                <div class="product-info">
+                    <h3>Pumpkinspice Cocktail</h3>
+                    <p class="product-type">Warm Orange Plumping Lip Gloss</p>
+                    <p>Infused with a cozy cinnamon flavor.</p>
+                    <span class="price">R150.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-pumpkin" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-pumpkin" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Poison Apple" data-price="150">
+                <img src="images/poison_apple.jpg" alt="Poison Apple Lip Gloss">
+                <div class="product-info">
+                    <h3>Poison Apple</h3>
+                    <p class="product-type">Neon Green Plumping Lip Gloss</p>
+                    <p>Crafted with a tart apple flavor.</p>
+                    <span class="price">R150.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-poison" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-poison" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Purple Man Eater" data-price="150">
+                <img src="images/purple_man_eater.jpg" alt="Purple Man Eater Lip Gloss">
+                <div class="product-info">
+                    <h3>Purple Man Eater</h3>
+                    <p class="product-type">Potent Purple Opaque Plumping Lip Gloss</p>
+                    <p>with a blue curacao, grenadine and cranberry flavor.</p>
+                    <span class="price">R150.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-purple" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-purple" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Vampire's Kiss" data-price="150">
+                <img src="images/vampire's_kiss.jpg" alt="Vampire's Kiss Lip Gloss">
+                <div class="product-info">
+                    <h3>Vampire's Kiss</h3>
+                    <p class="product-type">Bloody Red Plumping Lip Gloss</p>
+                    <p>with an intense black raspberry and sharp cranberry flavor.</p>
+                    <span class="price">R150.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-vampire" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-vampire" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Black Magic Martini" data-price="150">
+                <img src="images/black_magic_martini.jpg" alt="Black Magic Martini Lip Gloss">
+                <div class="product-info">
+                    <h3>Black Magic Martini</h3>
+                    <p class="product-type">Black Plumping Lip Gloss</p>
+                    <p>Rich gloss with an intense sweet raspberry blackberry flavor.</p>
+                    <span class="price">R150.00</span>
+                    <div class="qty-selector-container">
+                        <label for="qty-blackmagic" class="qty-label">Qty:</label>
+                        <input type="number" id="qty-blackmagic" class="item-qty-input" value="1" min="1" max="99">
+                    </div>
+                    <button type="button" class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Whisper. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
