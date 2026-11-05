@@ -7,6 +7,12 @@ Welcome to the official repository for **Whisper**, an exclusive, high-end luxur
 * **Changelog:** View the detailed development record in our [Changelog File](./CHANGELOG.md).
 ---
 
+## Live Website
+
+[Visit Whisper Live Website](https://whisper-amelia.netlify.app)
+
+---
+
 ## Project Overview
 
 Whisper is designed as a modern, immersive web experience built with semantic HTML5 and custom modular CSS. The site balances sleek dark-mode aesthetics, high-fashion editorial layouts, and intuitive user navigation to present a curated lineup of luxury products, cocktail-inspired shade collections, exclusive brand stories, and upcoming events.
