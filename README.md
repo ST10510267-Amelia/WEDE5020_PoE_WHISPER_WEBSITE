@@ -1,7 +1,10 @@
 # Whisper — E-Commerce & Luxury Web Experience
 
 Welcome to the official repository for **Whisper**, an exclusive, high-end luxury e-commerce platform and digital brand showcase inspired by cocktail aesthetic culture, lip gloss artistry, and nightlife sophistication.
+---
 
+## Documentation & Changelog
+* **Changelog:** View the detailed development record in our [Changelog File](./CHANGELOG.md).
 ---
 
 ## Project Overview
