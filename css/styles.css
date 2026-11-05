@@ -1206,3 +1206,40 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+/* Mobile adjustments for header & menu layout */
+@media (max-width: 768px) {
+  /* Keep navigation items in one single row */
+  header nav ul,
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Small gap to ensure links fit comfortably across the screen */
+  }
+
+  header nav a,
+  .nav-links a {
+    font-size: 0.65rem; /* Slightly smaller text size for mobile width fit */
+    white-space: nowrap;
+  }
+
+  /* Force the product grid to display 3 items per row on mobile */
+  .product-grid,
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Compact spacing between columns on small screens */
+  }
+
+  /* Ensure text & card content scales down nicely in tight columns */
+  .product-card h3 {
+    font-size: 0.75rem;
+  }
+
+  .product-card p {
+    font-size: 0.6rem;
+  }
+}
